@@ -994,9 +994,16 @@ alias edld=execute_drupal_db
 
 execute_drupal_update() {
   show_message "Drupal" "Updating module or theme"
+
   if ! [ -z "$2" ]; then
     rm -rf $2
-    wget $1$2$3
+
+    if [ $(uname) == 'Darwin' ]; then
+      curl $1$2$3 -o $2$3
+    else
+      wget $1$2$3
+    fi
+
     tar zxfv $2$3
     rm $2$3
   else

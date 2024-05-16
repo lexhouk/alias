@@ -68,6 +68,21 @@ Some configuration for linux terminal and programs.
       <td>edre myproject_web pwd</td>
     </tr>
     <tr>
+      <td colspan="4" align="center">Drupal</td>
+    </tr>
+    <tr>
+      <td>edlu</td>
+      <td>
+        <ul>
+          <li>URL prefix</li>
+          <li>Extension name in URL</li>
+          <li>URL suffix</li>
+        </ul>
+      </td>
+      <td>Update extension</td>
+      <td>edlu https://ftp.drupal.org/files/projects/ standwithukraine -7.x-2.3.tar.gz</td>
+    </tr>
+    <tr>
       <td colspan="4" align="center">Drush</td>
     </tr>
     <tr>

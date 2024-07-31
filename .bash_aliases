@@ -591,16 +591,24 @@ alias edre=execute_docker_execute
 
 alias edra='sudo chmod +x $(find . -name "*.sh") '
 
+execute_docker_compose() {
+  if [ -z $(which docker-compose)]; then
+    docker compose $@
+  else
+    docker-compose $@
+  fi
+}
+
 execute_docker_up() {
   show_message "Docker" "Upping"
-  docker-compose up -d
+  execute_docker_compose up -d $@
 }
 
 alias edru=execute_docker_up
 
 execute_docker_down() {
   show_message "Docker" "Downing"
-  docker-compose down
+  execute_docker_compose down $@
 }
 
 alias edrd=execute_docker_down

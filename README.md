@@ -1,6 +1,18 @@
-Some configuration for linux terminal and programs.
+```
+     _    _ _
+    / \  | (_) __ _ ___
+   / _ \ | | |/ _` / __|
+  / ___ \| | | (_| \__ \
+ /_/   \_\_|_|\__,_|___/
+```
 
-# Commands list
+# Alias
+
+The set of alternative names of commands in the style of Assembler commands -
+abbreviations or other maximally possible short names.
+
+## Commands list
+
 <table>
   <thead>
     <tr>
@@ -57,6 +69,12 @@ Some configuration for linux terminal and programs.
       <td colspan="4" align="center">Docker</td>
     </tr>
     <tr>
+      <td>edrd</td>
+      <td>-</td>
+      <td>Deactivate containers</td>
+      <td>edrd</td>
+    </tr>
+    <tr>
       <td>edre</td>
       <td>
         <ul>
@@ -66,6 +84,12 @@ Some configuration for linux terminal and programs.
       </td>
       <td>Connect to a container or execute any command</td>
       <td>edre myproject_web pwd</td>
+    </tr>
+    <tr>
+      <td>edru</td>
+      <td>-</td>
+      <td>Activate containers</td>
+      <td>edru -f compose.local.yml</td>
     </tr>
     <tr>
       <td colspan="4" align="center">Drupal</td>
@@ -258,9 +282,11 @@ Some configuration for linux terminal and programs.
   </tbody>
 </table>
 
-# Format for "projects.yml" file
+## Projects file format
 
-```
+**projects.yml**
+
+```yaml
 git:
   user: <git_username>
   mail: <git_email>

@@ -56,7 +56,7 @@ abbreviations or other maximally possible short names.
     <tr>
       <td>ecp</td>
       <td><i>See <a href="https://getcomposer.org/doc/03-cli.md#update-u-upgrade">here</a></i></td>
-      <td>Get the latest versions of packages without packages for development</td>
+      <td>Get the latest versions of packages or install the current versions without the development ones</td>
       <td>ecp --no-progress</td>
     </tr>
     <tr>

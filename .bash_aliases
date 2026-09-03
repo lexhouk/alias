@@ -196,7 +196,12 @@ alias ecud=execute_composer_update_debug
 
 execute_composer_production() {
   show_message "Composer" "Updating production"
-  composer update --no-dev $@
+
+  if [ "$#" == 0 ]; then
+    eci --no-dev
+  else
+    ecu --no-dev $@
+  fi
 }
 
 alias ecp=execute_composer_production
